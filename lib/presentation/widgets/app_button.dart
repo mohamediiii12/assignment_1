@@ -6,7 +6,7 @@ class AppButton extends StatelessWidget {
   final String text;
   final VoidCallback onPressed;
 
-  const AppButton({super.key, required this.text, required this.onPressed});
+  AppButton({super.key, required this.text, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -15,10 +15,17 @@ class AppButton extends StatelessWidget {
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.button,
-          padding: const EdgeInsets.symmetric(vertical: 15),
+          padding: EdgeInsets.symmetric(vertical: 15),
         ),
         onPressed: onPressed,
-        child: Text(text , style: const TextStyle(fontSize: 20,color:Colors.black,fontWeight:FontWeight.w700 )),
+        child: Text(
+          text,
+          style: TextStyle(
+            fontSize: 20,
+            color: Colors.black,
+            fontWeight: FontWeight.w700,
+          ),
+        ),
       ),
     );
   }

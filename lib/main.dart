@@ -1,4 +1,5 @@
 import 'package:assignment_1/core/router.dart';
+import 'package:assignment_1/core/strings.dart';
 import 'package:flutter/material.dart';
 
 
@@ -12,9 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Login App',
-      theme: ThemeData(primarySwatch: Colors.indigo),
+      title: AppStrings.login,
+      theme: ThemeData(primarySwatch: Colors.red),
       initialRoute: '/',
       onGenerateRoute: AppRouter.generateRoute,
     );

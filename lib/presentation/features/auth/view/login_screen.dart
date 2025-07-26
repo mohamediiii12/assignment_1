@@ -40,11 +40,22 @@ class LoginScreen extends StatelessWidget {
                     Navigator.pushNamed(context, '/home');
                   },
                 ),
-                const SizedBox(height: 20),
-                Text(
-                  AppStrings.signUpPrompt,
-                  style: const TextStyle(color: AppColors.text),
+                Center(
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/register');
+                    },
+                    child: Text(
+                      AppStrings.signUpPrompt,
+                      style: const TextStyle(
+                        color: AppColors.primary,
+                        fontSize: 15,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
                 ),
+
               ],
             ),
           ),

@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.background,
       appBar: AppBar(
-        title: const Text('Home'),
+        title: Text('Home'),
         backgroundColor: AppColors.primary,
       ),
       body: Center(
@@ -28,7 +28,7 @@ class HomeScreen extends StatelessWidget {
             ),
             boxShadow: [
               BoxShadow(
-                color: const Color.fromARGB(255, 203, 96, 96),
+                color: Color.fromARGB(255, 203, 96, 96),
                 
                 
               )
@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Shadow(
                     offset: Offset(-10, 23),
-                    blurRadius: 40,
+                  blurRadius: 35,
                     color: Color.fromARGB(255, 0, 0, 0), 
                   ),
                 ],
