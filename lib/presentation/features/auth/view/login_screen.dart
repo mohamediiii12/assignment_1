@@ -46,6 +46,7 @@ class LoginScreen extends StatelessWidget {
                       Navigator.pushNamed(context, '/register');
                     },
                     child: Text(
+                      
                       AppStrings.signUpPrompt,
                       style: const TextStyle(
                         color: AppColors.primary,
